@@ -1,5 +1,5 @@
 #Install the libraries
-#install.packages("purrr")
+install.packages("purrr")
 library(httr)
 library(data.table)
 library(dplyr)
