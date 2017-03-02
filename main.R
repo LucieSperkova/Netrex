@@ -1,10 +1,8 @@
 #Install the libraries
-install.packages("purrr")
 library(httr)
 library(data.table)
 library(dplyr)
 library(xml2)
-library(purrr)
 
 #=======BASIC INFO ABOUT THE Netrex EXTRACTOR========#
 
@@ -134,7 +132,7 @@ res<-content(r,"text",encoding = "UTF-8")%>%textConnection%>%read.csv
 
 for(dataType in dataTypes){
   print(paste("creating table",dataType))
-  write.csv(getStats(dataType),paste(dataType,".csv",sep=""))
+  write.csv(getStats(dataType),paste("out/tables/",dataType,".csv",sep=""))
 }
 
 
