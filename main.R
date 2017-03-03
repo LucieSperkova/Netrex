@@ -132,7 +132,7 @@ res<-content(r,"text",encoding = "UTF-8")%>%textConnection%>%read.csv
 
 for(dataType in dataTypes){
   print(paste("creating table",dataType))
-  write.csv(getStats(dataType),paste("out/tables/",dataType,".csv",sep=""))
+  write.csv(getStats(dataType),paste("out/tables/",dataType,".csv",sep=""),row.names = FALSE)
 }
 
 
