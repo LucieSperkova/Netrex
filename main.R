@@ -24,12 +24,12 @@ to<-app$getParameters()$to
 dataTypes <- c(
   "people_count",
   "people_count_in",
-  "people_count_out",
-  "transaction_value",
-  "transaction_count",
-  "conversion_value",
-  "conversion_count",
-  "flow_volume"
+  "people_count_out"
+  #,"transaction_value",
+  #"transaction_count",
+  #"conversion_value",
+  #"conversion_count",
+  #"flow_volume"
 )
 
 # List of available data types
