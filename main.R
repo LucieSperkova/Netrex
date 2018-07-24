@@ -68,7 +68,7 @@ if(is.null(dataTypes)) stop("enter your password in the #PASS config field")
 if(is.null(from)|is.null(to)) {
   warning("You entered an invalid date range, the extract will extract data from last 1 month")
   to<-Sys.Date()
-  from<-to-1
+  from<-to-180
   to<-as.POSIXct(to)
   from<-as.POSIXct(from)
 }
